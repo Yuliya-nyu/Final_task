@@ -15,8 +15,8 @@ class LoginPage {
         return $('//h3[@data-test="error"]');
     }
 
-    open() {
-        browser.url('https://www.saucedemo.com/');
+    async open() {
+        await browser.url('https://www.saucedemo.com/');
     }
 
     async clearInputField(element) {

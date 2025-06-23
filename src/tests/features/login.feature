@@ -10,5 +10,5 @@ Feature: Test Login Functionality
     Then this <errorMsg> is displayed
 
     Examples:
-      | username | password | errorMsg                           |
-      | test     | test123  | Epic sadface: Username is required |
+      | username | password | errorMsg             |
+      | test     | test123  | Username is required |

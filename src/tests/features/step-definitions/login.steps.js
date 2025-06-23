@@ -1,6 +1,8 @@
 const {Given, When, Then} = require('@wdio/cucumber-framework');
-// const {expect, $} = require('@wdio/globals')
+const {expect, $} = require('@wdio/globals')
 const LoginPage = require('../../../po/pages/login.page');
+
+
 
 const loginPage = new LoginPage();
 

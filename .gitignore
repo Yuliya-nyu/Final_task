@@ -9,3 +9,10 @@ artifacts
 
 # System files
 *.log
+
+# Allure reports
+reports/allure-results/
+reports/allure-report/
+
+# npm debug logs
+npm-debug.log*
