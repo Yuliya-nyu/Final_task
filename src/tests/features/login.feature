@@ -1,11 +1,11 @@
 Feature: Test Login Functionality
 
   @UC-1@negative
-  Scenario Outline:Login with empty credentials
+  Scenario Outline:Test Login form with empty credentials
 
     Given user is on login page
-    When user enter <username> and <password>
-    And user clear both fields
+    When user enters <username> and <password>
+    And user clears both fields
     And user clicks the login button
     Then this <errorMsg> is displayed
 
@@ -14,10 +14,11 @@ Feature: Test Login Functionality
       | test     | test123  | Username is required |
 
   @UC-2 @negative
-  Scenario Outline:Login with missing password
+  Scenario Outline:Test Login form with credentials by passing Username
+
     Given user is on login page
-    When user enter <username> and <password>
-    And user clears only the password
+    When user enters <username> and <password>
+    And user clears the password
     And user clicks the login button
     Then this <errorMsg> is displayed
 
@@ -26,9 +27,10 @@ Feature: Test Login Functionality
       | user     | user123  | Password is required |
 
   @UC-3 @positive
-  Scenario Outline:Login with valid credentials
+  Scenario Outline:Test Login form with credentials by passing Username & Password
+
     Given user is on login page
-    When user enter <username> and <password>
+    When user enters <username> and <password>
     And user clicks the login button
     Then this <expectedTitle> should be displayed
 

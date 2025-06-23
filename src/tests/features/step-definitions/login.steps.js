@@ -8,17 +8,17 @@ Given(/^user is on login page$/, async () => {
     await loginPage.open();
 });
 
-When(/^user enter (.*) and (.*)$/, async (username, password) => {
+When(/^user enters (.*) and (.*)$/, async (username, password) => {
     await loginPage.usernameInput.setValue(username);
     await loginPage.passwordInput.setValue(password);
 });
 
-When(/^user clear both fields$/, async () => {
+When(/^user clears both fields$/, async () => {
     await loginPage.clearInputField(loginPage.usernameInput);
     await loginPage.clearInputField(loginPage.passwordInput);
 });
 
-When(/^user clears only the password$/, async () => {
+When(/^user clears the password$/, async () => {
     await loginPage.clearInputField(loginPage.passwordInput);
 });
 
