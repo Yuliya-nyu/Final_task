@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "wdio run src/configs/wdio.conf.js",
+    "test": "rm -rf reports/allure-results && wdio run src/configs/wdio.conf.js",
     "report:generate": "allure generate reports/allure-results --clean -o reports/allure-report",
     "report:open": "allure open reports/allure-report",
     "report": "npm run report:generate && npm run report:open"

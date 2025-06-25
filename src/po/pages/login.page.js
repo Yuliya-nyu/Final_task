@@ -16,7 +16,7 @@ class LoginPage {
     }
 
     async open() {
-        await browser.url('https://www.saucedemo.com/');
+        await browser.url('/');
     }
 
     async clearInputField(element) {
