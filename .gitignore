@@ -12,7 +12,7 @@ artifacts
 
 # Allure reports
 reports/allure-results/
-reports/allure-report/
+allure-report/
 
 # npm debug logs
 npm-debug.log*
